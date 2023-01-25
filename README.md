@@ -4,4 +4,4 @@
 
 ### Northeastern University CS4550: Web Development Project
 
-Netlify Link: https://app.netlify.com/sites/spiffy-meerkat-868591/overview
+Netlify Link: https://spiffy-meerkat-868591.netlify.app/
