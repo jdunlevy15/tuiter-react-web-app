@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tuit</title>
+  </head>
+  <body>
+    <a href="navigation.html">Back</a>
+    <h1>Tuiter</h1>
+    <h2>Home</h2>
+    <img
+      height="48px"
+      width="48px"
+      src="https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1200x630_center,f_auto,q_auto:best/streams/2013/August/130808/6C8558749-130808-walter-white-tease.jpg"
+    />
+    <br />
+
+    <form id="tuit-form">
+      <textarea cols="30" rows="4">What's happening?</textarea>
+      <br />
+      <select id="select-who-can-reply">
+        <option value="EVERYONE" selected>Everyone can reply</option>
+        <option value="FOLLOWING">People you follow</option>
+        <option value="MENTIONED">Only people you mention</option>
+      </select>
+      <hr />
+      <input type="file" />
+      <button>Tuit</button>
+      <hr />
+    </form>
+  </body>
+</html>
