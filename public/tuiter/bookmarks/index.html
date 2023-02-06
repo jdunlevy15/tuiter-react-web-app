@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookmarks</title>
     <link href="index.css" rel="stylesheet" />
+    <link href="../styles.css" rel="stylesheet" />
   </head>
   <body>
     <div class="wd-main-content wd-side-bordered-content">
+      <a href="../navigation.html" class="wd-back-button wd-color-tuiter-blue"
+        >Back</a
+      >
       <div class="wd-bookmarks-title">
         <div class="wd-color-white wd-font-20">Bookmarks</div>
         <div class="wd-color-light-grey wd-font-13">@WebDev</div>
@@ -17,31 +21,34 @@
         <div class="wd-tweet-avatar">
           <img
             class="wd-image-avatar"
-            src="data:image/jpeg;base64,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"
+            src="https://yt3.googleusercontent.com/CSw2Ctbp3shpvCostFVH4jcmyKYdNFQqwCVZ4eOnMsV_T17-kdsONRSL0Rb7tknrml2RLUsS=s900-c-k-c0x00ffffff-no-rj"
           />
         </div>
         <div class="wd-tweet-content">
           <div class="wd-tweet-user-info">
-            <span class="wd-color-white wd-font-15">Walter White</span>
-            <span class="wd-color-light-grey wd-font-15">@meth_cooker123</span>
+            <span class="wd-color-white wd-font-15">Philadelphia 76ers</span>
+            <span class="wd-color-light-grey wd-font-15">@sixers</span>
             <span class="wd-color-light-grey wd-font-15">Feb 3</span>
           </div>
           <div class="wd-tweet-text wd-color-white wd-font-15">
-            I love meth. This is a really long tweet about meth to show that the
-            width of this tweet about meth will not exceed 506px.
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium voluptatum deleniti atque corrupti quos
+            dolores et quas molestias excepturi sint occaecati cupiditate non
+            provident, similique sunt in culpa qui officia deserunt mollitia
+            animi, id est laborum et dolorum fuga
           </div>
           <div class="wd-tweet-image-component">
             <div class="wd-tweet-image">
               <img
                 class="wd-tweet-image"
-                src="https://images.theconversation.com/files/341513/original/file-20200612-153812-1hvh1e4.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop"
+                src="https://cdn.abcotvs.com/dip/images/12478256_112122embiid.jpg"
               />
             </div>
             <div class="wd-padding-all-12">
-              <div class="wd-font-15 wd-color-white">
-                How to Make Meth for Beginners!
+              <div class="wd-font-15 wd-color-white">76ers win!</div>
+              <div class="wd-font-15 wd-color-light-grey">
+                Joel Embiid scores 50 points...
               </div>
-              <div class="wd-font-15 wd-color-light-grey">Step 1...</div>
             </div>
           </div>
           <div class="wd-tweet-icons">
@@ -74,7 +81,7 @@
                 />
               </svg>
               <div class="wd-color-light-grey wd-font-15 wd-padding-left-12">
-                24
+                45
               </div>
             </div>
             <div class="wd-tweet-icon-and-number">
@@ -91,7 +98,7 @@
                 />
               </svg>
               <div class="wd-color-like-red wd-font-15 wd-padding-left-12">
-                24
+                63
               </div>
             </div>
             <div class="wd-tweet-icon-and-number">
@@ -107,7 +114,7 @@
                 />
               </svg>
               <div class="wd-color-light-grey wd-font-15 wd-padding-left-12">
-                24
+                32
               </div>
             </div>
           </div>
@@ -117,31 +124,33 @@
         <div class="wd-tweet-avatar">
           <img
             class="wd-image-avatar"
-            src="data:image/jpeg;base64,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"
+            src="https://pbs.twimg.com/profile_images/1611179034800439296/Y0wZifB3_400x400.jpg"
           />
         </div>
         <div class="wd-tweet-content">
           <div class="wd-tweet-user-info">
-            <span class="wd-color-white wd-font-15">Walter White</span>
-            <span class="wd-color-light-grey wd-font-15">@meth_cooker123</span>
-            <span class="wd-color-light-grey wd-font-15">Feb 3</span>
+            <span class="wd-color-white wd-font-15">Philadelphia Eagles</span>
+            <span class="wd-color-light-grey wd-font-15">@Eagles</span>
+            <span class="wd-color-light-grey wd-font-15">Feb 2</span>
           </div>
           <div class="wd-tweet-text wd-color-white wd-font-15">
-            I love meth. This is a really long tweet about meth to show that the
-            width of this tweet about meth will not exceed 506px.
+            Et harum quidem rerum facilis est et expedita distinctio. Nam libero
+            tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+            quo minus id quod maxime placeat facere possimus, omnis voluptas
+            assumenda est, omnis dolor repellendus.
           </div>
           <div class="wd-tweet-image-component">
             <div class="wd-tweet-image">
               <img
                 class="wd-tweet-image"
-                src="https://images.theconversation.com/files/341513/original/file-20200612-153812-1hvh1e4.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop"
+                src="https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/eagles/azdbpxjiuhj9sbneawhc"
               />
             </div>
             <div class="wd-padding-all-12">
               <div class="wd-font-15 wd-color-white">
-                How to Make Meth for Beginners!
+                The Eagles are going to the Super Bowl!
               </div>
-              <div class="wd-font-15 wd-color-light-grey">Step 1...</div>
+              <div class="wd-font-15 wd-color-light-grey">Go Birds</div>
             </div>
           </div>
           <div class="wd-tweet-icons">
@@ -158,7 +167,7 @@
                 />
               </svg>
               <div class="wd-color-light-grey wd-font-15 wd-padding-left-12">
-                24
+                102
               </div>
             </div>
             <div class="wd-tweet-icon-and-number">
@@ -174,7 +183,7 @@
                 />
               </svg>
               <div class="wd-color-light-grey wd-font-15 wd-padding-left-12">
-                24
+                95
               </div>
             </div>
             <div class="wd-tweet-icon-and-number">
@@ -191,7 +200,7 @@
                 />
               </svg>
               <div class="wd-color-like-red wd-font-15 wd-padding-left-12">
-                24
+                204
               </div>
             </div>
             <div class="wd-tweet-icon-and-number">
@@ -207,7 +216,7 @@
                 />
               </svg>
               <div class="wd-color-light-grey wd-font-15 wd-padding-left-12">
-                24
+                45
               </div>
             </div>
           </div>

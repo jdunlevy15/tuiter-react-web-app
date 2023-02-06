@@ -1,0 +1,52 @@
+body {
+  background-color: black;
+  font-family: Sans-Serif;
+}
+
+.wd-main-content {
+  position: relative;
+  left: 16px;
+  margin-right: 16px;
+}
+
+.wd-side-bordered-content {
+  border-left: 1px solid rgb(47, 51, 54);
+  border-right: 1px solid rgb(47, 51, 54);
+}
+
+/* Colors and font sizes */
+.wd-color-white {
+  color: white;
+}
+
+.wd-color-tuiter-blue {
+  color: rgb(29, 161, 242);
+}
+
+.wd-back-button {
+  margin: 16px;
+}
+
+.wd-color-like-red {
+  color: rgb(232, 28, 79);
+}
+
+.wd-color-light-grey {
+  color: gray;
+}
+
+.wd-font-20 {
+  font-size: 20px;
+}
+
+.wd-font-13 {
+  font-size: 13px;
+}
+
+.wd-font-15 {
+  font-size: 15px;
+}
+
+.wd-font-size-36 {
+  font-size: 36px;
+}
