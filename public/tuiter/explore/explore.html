@@ -11,6 +11,7 @@
     <!--
     <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
     -->
+    <link href="explore.css" rel="stylesheet" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
@@ -20,13 +21,6 @@
   <body>
     <div class="container">
       <!-- Hiding and showing responsive content -->
-      <h2>Hiding and showing responsive content</h2>
-      <div class="d-block d-sm-none fa-2x">XS</div>
-      <div class="d-none d-sm-block d-md-none fa-2x">S</div>
-      <div class="d-none d-md-block d-lg-none fa-2x">M</div>
-      <div class="d-none d-lg-block d-xl-none fa-2x">L</div>
-      <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
-      <div class="d-none d-xxl-block fa-2x">XXL</div>
       <div class="row mt-3">
         <!-- Navigation Bar-->
         <div class="col-2 col-lg-1 col-xl-2 col-xxl-3">
@@ -81,7 +75,7 @@
               href="../more/index.html"
               class="list-group-item list-group-item-action"
             >
-              <i class="fas fa-circle"></i>
+              <i class="fas fa-ellipsis-h"></i>
               <span class="d-none d-xl-inline">More</span>
             </a>
           </div>
@@ -90,15 +84,29 @@
         <!-- Main content -->
         <div class="col-10 col-lg-7 col-xl-6">
           <!-- Search bar TODO: add search icon-->
-          <input
-            type="email"
+          <div>
+            <span class="wd-search-div">
+              <i class="fas fa-search"></i>
+              <input
+                type="text"
+                id="search-bar"
+                placeholder="Search Tuiter"
+                class="wd-transparent-input"
+              />
+            </span>
+            <span class="wd-float-right"
+              ><i class="fas fa-cog fa-2x wd-bootstrap-blue"></i
+            ></span>
+          </div>
+          <!--<input
+            type="text"
             class="form-control rounded-pill"
             id="input1"
             placeholder="Search Tuiter"
-          />
+          />-->
 
           <!-- Tabs -->
-          <ul class="mt-2 mb-3 nav nav-tabs">
+          <ul class="mt-3 mb-3 nav nav-tabs">
             <li class="nav-item">
               <a class="nav-link active" href="#">For you</a>
             </li>
@@ -117,10 +125,13 @@
           </ul>
 
           <!-- Image -->
-          <image
-            width="100%"
-            src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"
-          />
+          <div class="wd-image-caption-wrapper">
+            <h3 class="wd-image-caption text-white">SpaceX's Starship</h3>
+            <image
+              width="100%"
+              src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"
+            />
+          </div>
 
           <!-- Tweets -->
           <div class="list-group">
@@ -129,7 +140,8 @@
                 <div class="col col-9">
                   <p class="mb-0 text-secondary">Web Development</p>
                   <p class="mb-0">
-                    ReactJS <i class="fas fa-check-circle"></i> -2h
+                    ReactJS <i class="fas fa-check-circle"></i>
+                    <span class="text-secondary">- 2h</span>
                   </p>
                   <p>
                     React.js is a component based front end library that makes
@@ -184,7 +196,8 @@
                 <div class="col col-9">
                   <p class="mb-0 text-secondary">Web Development</p>
                   <p class="mb-0">
-                    NodeJS <i class="fas fa-check-circle"></i> - 2h
+                    NodeJS <i class="fas fa-check-circle"></i>
+                    <span class="text-secondary">- 2h</span>
                   </p>
                   <p class="mb-0 text-secondary">123K Tweets</p>
                 </div>
