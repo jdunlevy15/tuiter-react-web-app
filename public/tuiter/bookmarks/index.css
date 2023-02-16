@@ -1,0 +1,73 @@
+.wd-bookmarks-title {
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: gray solid 1px;
+}
+
+.wd-tweet {
+  padding-left: 16px;
+  padding-top: 12px;
+  display: flex;
+  border-bottom: gray solid 1px;
+}
+
+.wd-tweet-avatar {
+  float: left;
+}
+
+.wd-image-avatar {
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+}
+
+.wd-tweet-content {
+  float: right;
+  padding-left: 12px;
+}
+
+.wd-tweet-text {
+  padding-top: 12px;
+  width: 506px;
+}
+
+.wd-tweet-image-component {
+  border: gray solid 1px;
+  margin-top: 12px;
+  border-radius: 12px;
+}
+
+.wd-tweet-image {
+  width: 504px;
+  height: 264px;
+  border-radius: 12px 12px 0px 0px;
+  border-bottom: gray solid 1px;
+}
+
+.wd-padding-top-12 {
+  padding-top: 12px;
+}
+
+.wd-padding-bottom-12 {
+  padding-bottom: 12px;
+}
+
+.wd-padding-all-12 {
+  padding: 12px;
+}
+
+.wd-padding-left-12 {
+  padding: 12px;
+}
+
+.wd-tweet-icon-and-number {
+  display: flex;
+  align-items: center;
+}
+
+.wd-tweet-icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
