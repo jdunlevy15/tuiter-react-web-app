@@ -15,9 +15,10 @@ const WhoToFollowListItem = ({
         <div className="col-2">
           <img
             width={48}
-            width={48}
+            height={48}
             className="rounded-circle"
             src={who.avatarIcon}
+            alt={who.userName}
           />
         </div>
         <div className="col-7 ps-3">

@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 const PostSummaryItem = ({
   post = {
@@ -17,13 +19,13 @@ const PostSummaryItem = ({
           <p className="mb-0 text-secondary">{post.topic}</p>
           <p className="mb-0">
             {post.userName}
-            <i className="fas fa-check-circle"></i>
+            <FontAwesomeIcon icon={faCheckCircle} />
             <span className="text-secondary">- {post.time}</span>
           </p>
           <p>{post.title}</p>
         </div>
         <div className="col-3">
-          <img width="96px" height="96px" src={post.image} />
+          <img width="96px" height="96px" src={post.image} alt={post.topic} />
         </div>
       </div>
     </div>

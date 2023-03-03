@@ -25,27 +25,27 @@ const ExploreComponent = () => {
       </div>
       <ul className="mt-3 mb-3 nav nav-tabs">
         <li className="nav-item">
-          <a className="nav-link active" href="#">
+          <a className="nav-link active" href="../tuiter">
             For you
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="../tuiter">
             Trending
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="../tuiter">
             News
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="../tuiter">
             Sports
           </a>
         </li>
         <li className="nav-item">
-          <a className="d-none d-md-block nav-link" href="#">
+          <a className="d-none d-md-block nav-link" href="../tuiter">
             Entertainment
           </a>
         </li>
@@ -54,6 +54,7 @@ const ExploreComponent = () => {
         <h3 className="wd-image-caption text-white">SpaceX's Starship</h3>
         <img
           width="100%"
+          alt="space x starship"
           src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"
         />
       </div>
