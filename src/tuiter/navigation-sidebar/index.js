@@ -26,7 +26,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
           <span className="wd-padding-left-4 d-none d-xl-inline">Home</span>
         </a>
         <a
-          href="#"
+          href="../tuiter"
           className={`list-group-item list-group-item-action ${
             active === "explore" ? "active" : ""
           }`}
