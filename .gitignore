@@ -2,6 +2,7 @@
 
 .idea
 node_modules
+public/vendors
 
 # dependencies
 /node_modules
