@@ -17,7 +17,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
     <>
       <div className="list-group">
         <a
-          href="../home/index.html"
+          href="../tuiter/home"
           className={`list-group-item list-group-item-action ${
             active === "home" ? "active" : ""
           }`}

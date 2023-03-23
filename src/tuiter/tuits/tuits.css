@@ -1,0 +1,8 @@
+.tuit-stats {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon-num {
+  padding-right: 4px;
+}
