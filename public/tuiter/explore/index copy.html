@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!--
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+    -->
+    <link href="../../vendors/bootswatch/bootstrap.min.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>Explore</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Hiding and showing responsive content -->
+      <div class="row mt-3">
+        <!-- Navigation Bar-->
+        <div class="col-2 col-lg-1 col-xl-2 col-xxl-3">
+          <div class="list-group">
+            <a
+              href="../home/index.html"
+              class="list-group-item list-group-item-action"
+            >
+              <i class="fas fa-home"></i>
+              <span class="d-none d-xl-inline">Home</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action active">
+              <i class="fas fa-hashtag"></i>
+              <span class="d-none d-xl-inline">Explore</span>
+            </a>
+            <a
+              href="../notifications/index.html"
+              class="list-group-item list-group-item-action"
+            >
+              <i class="fas fa-bell"></i>
+              <span class="d-none d-xl-inline">Notifications</span>
+            </a>
+            <a
+              href="../messages/index.html"
+              class="list-group-item list-group-item-action"
+            >
+              <i class="fas fa-envelope"></i>
+              <span class="d-none d-xl-inline">Messages</span>
+            </a>
+            <a
+              href="../bookmarks/index.html"
+              class="list-group-item list-group-item-action"
+            >
+              <i class="fas fa-bookmark"></i>
+              <span class="d-none d-xl-inline">Bookmarks</span>
+            </a>
+            <a
+              href="../lists/index.html"
+              class="list-group-item list-group-item-action"
+            >
+              <i class="fas fa-list"></i>
+              <span class="d-none d-xl-inline">Lists</span>
+            </a>
+            <a
+              href="../profile/index.html"
+              class="list-group-item list-group-item-action"
+            >
+              <i class="fas fa-user"></i>
+              <span class="d-none d-xl-inline">Profile</span>
+            </a>
+            <a
+              href="../more/index.html"
+              class="list-group-item list-group-item-action"
+            >
+              <i class="fas fa-ellipsis-h"></i>
+              <span class="d-none d-xl-inline">More</span>
+            </a>
+          </div>
+          <button class="btn btn-primary w-100 rounded-pill mt-3">Tuit</button>
+        </div>
+        <!-- Main content -->
+        <div class="col-10 col-lg-7 col-xl-6">
+          <!-- Search bar TODO: add search icon-->
+          <div>
+            <span class="wd-search-div">
+              <i class="fas fa-search"></i>
+              <input
+                type="text"
+                id="search-bar"
+                placeholder="Search Tuiter"
+                class="wd-transparent-input"
+              />
+            </span>
+            <span class="wd-float-right"
+              ><i class="fas fa-cog fa-2x wd-bootstrap-blue"></i
+            ></span>
+          </div>
+          <!--<input
+            type="text"
+            class="form-control rounded-pill"
+            id="input1"
+            placeholder="Search Tuiter"
+          />-->
+
+          <!-- Tabs -->
+          <ul class="mt-3 mb-3 nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">For you</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="d-none d-md-block nav-link" href="#">Entertainment</a>
+            </li>
+          </ul>
+
+          <!-- Image -->
+          <div class="wd-image-caption-wrapper">
+            <h3 class="wd-image-caption text-white">SpaceX's Starship</h3>
+            <image
+              width="100%"
+              src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"
+            />
+          </div>
+
+          <!-- Tweets -->
+          <div class="list-group">
+            <div class="list-group-item">
+              <div class="row">
+                <div class="col col-9">
+                  <p class="mb-0 text-secondary">Web Development</p>
+                  <p class="mb-0">
+                    ReactJS <i class="fas fa-check-circle"></i>
+                    <span class="text-secondary">- 2h</span>
+                  </p>
+                  <p>
+                    React.js is a component based front end library that makes
+                    it very easy to build Single Page Applications or SPAs
+                  </p>
+                </div>
+                <div class="col-3">
+                  <img
+                    style="width: 96px; height: 96px"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc2Y2gmQB5zuaBd1AfN_AyEgoTgxPF65i7GwlvrbnnP_RUlubieG19WFnonCtS4ZfAox4&usqp=CAU"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <div class="row">
+                <div class="col col-9">
+                  <p class="mb-0">
+                    JavaScript <i class="fas fa-check-circle"></i>
+                  </p>
+                  <p class="mb-0">
+                    JavaScript is a programming language that can run on
+                    broswers as well as desktops
+                  </p>
+                  <p class="mb-0 text-secondary">123K Tweets</p>
+                </div>
+                <div class="col-3">
+                  <img
+                    style="width: 96px; height: 96px"
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <div class="row">
+                <div class="col col-9">
+                  <p class="mb-0 text-secondary">Web Development</p>
+                  <p class="mb-0">jQuery</p>
+                  <p class="mb-0 text-secondary">123K Tweets</p>
+                </div>
+                <div class="col-3">
+                  <img
+                    style="width: 96px; height: 96px"
+                    src="https://www.interviewbit.com/blog/wp-content/uploads/2021/10/jquery-logo-vertical_large_square.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <div class="row">
+                <div class="col col-9">
+                  <p class="mb-0 text-secondary">Web Development</p>
+                  <p class="mb-0">
+                    NodeJS <i class="fas fa-check-circle"></i>
+                    <span class="text-secondary">- 2h</span>
+                  </p>
+                  <p class="mb-0 text-secondary">123K Tweets</p>
+                </div>
+                <div class="col-3">
+                  <img
+                    style="width: 96px; height: 96px"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAl760B1LCCm8M4IfYmSdDKeA73KvMgFT4ievlterVYahVRt3N6ebX9xHdbe2Lbnncg0Q&usqp=CAU"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Who to follow -->
+        <div class="d-none d-lg-block col-4 col-xxl-3">
+          <div class="list-group">
+            <div class="list-group-item">Who to follow</div>
+            <div class="list-group-item">
+              <div class="row pe-2">
+                <div class="col-2">
+                  <img
+                    style="width: 48px; height: 48px"
+                    class="rounded-circle"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ820e8Dht7tVEIuyFidEMEOEvrhtyKgBk4vohGR99ReLBsvgh06o_DYkTnEvUa3mXGB34&usqp=CAU"
+                  />
+                </div>
+                <div class="col-7 ps-3">
+                  <p class="mb-0 ms-1">
+                    Java <i class="fas fa-check-circle"></i>
+                  </p>
+                  <p class="text-secondary mb-0 ms-1">@Java</p>
+                </div>
+                <div class="col-3 align-self-center">
+                  <div class="align-items-center justify-content-center">
+                    <button class="rounded-pill btn-primary align-middle">
+                      Follow
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <div class="row pe-2">
+                <div class="col-2">
+                  <img
+                    style="width: 48px; height: 48px"
+                    class="rounded-circle"
+                    src="https://yt3.googleusercontent.com/ytc/AL5GRJUbyc5-XWjux8b2hl0yK7KxNt-BpInezf0mHJwH=s900-c-k-c0x00ffffff-no-rj"
+                  />
+                </div>
+                <div class="col-7 ps-3">
+                  <p class="mb-0 ms-1">
+                    Relativity Space <i class="fas fa-check-circle"></i>
+                  </p>
+                  <p class="text-secondary mb-0 ms-1">@relativityspace</p>
+                </div>
+                <div class="col-3 align-self-center">
+                  <div class="align-items-center justify-content-center">
+                    <button class="rounded-pill btn-primary align-middle">
+                      Follow
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <div class="row pe-2">
+                <div class="col-2">
+                  <img
+                    style="width: 48px; height: 48px"
+                    class="rounded-circle"
+                    src="https://www.c-r-y.org.uk/wp-content/uploads/2016/10/Virgin-logo.png"
+                  />
+                </div>
+                <div class="col-7 ps-3">
+                  <p class="mb-0 ms-1">
+                    Virgin Galactic <i class="fas fa-check-circle"></i>
+                  </p>
+                  <p class="text-secondary mb-0 ms-1">@virgingalactic</p>
+                </div>
+                <div class="col-3 align-self-center">
+                  <div class="align-items-center justify-content-center">
+                    <button class="rounded-pill btn-primary align-middle">
+                      Follow
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <div class="row pe-2">
+                <div class="col-2">
+                  <img
+                    style="width: 48px; height: 48px"
+                    class="rounded-circle"
+                    src="https://1000logos.net/wp-content/uploads/2017/03/Color-of-the-NASA-Logo.jpg"
+                  />
+                </div>
+                <div class="col-7 ps-3">
+                  <p class="mb-0 ms-1">
+                    NASA <i class="fas fa-check-circle"></i>
+                  </p>
+                  <p class="text-secondary mb-0 ms-1">@NASA</p>
+                </div>
+                <div class="col-3 align-self-center">
+                  <div class="align-items-center justify-content-center">
+                    <button class="rounded-pill btn-primary align-middle">
+                      Follow
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <div class="row pe-2">
+                <div class="col-2">
+                  <img
+                    style="width: 48px; height: 48px"
+                    class="rounded-circle"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/800px-Tesla_T_symbol.svg.png"
+                  />
+                </div>
+                <div class="col-7 ps-3">
+                  <p class="mb-0 ms-1">
+                    Tesla <i class="fas fa-check-circle"></i>
+                  </p>
+                  <p class="text-secondary mb-0 ms-1">@Tesla</p>
+                </div>
+                <div class="col-3 align-self-center">
+                  <div class="align-items-center justify-content-center">
+                    <button class="rounded-pill btn-primary align-middle">
+                      Follow
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
