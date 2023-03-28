@@ -1,6 +1,7 @@
 import NavigationSidebar from "../navigation-sidebar";
 import WhoToFollowList from "../who-to-follow-list";
 import TuitsList from "../tuits/TuitsList";
+import PostSummaryList from "../post-summary-list";
 
 import whoReducer from "../reducers/who-reducer";
 import tuitsReducer from "../tuits/tuits-reducer";
@@ -21,7 +22,7 @@ function HomeScreen() {
           <TuitsList />
         </div>
         <div className="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-          <WhoToFollowList />
+          <PostSummaryList />
         </div>
       </div>
     </Provider>

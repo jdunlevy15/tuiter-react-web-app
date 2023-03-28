@@ -25,7 +25,13 @@ const PostSummaryItem = ({
           <p>{post.title}</p>
         </div>
         <div className="col-3">
-          <img width="96px" height="96px" src={post.image} alt={post.topic} />
+          <img
+            width="100%"
+            height="undefined"
+            aspectRatio="1/1"
+            src={post.image}
+            alt={post.topic}
+          />
         </div>
       </div>
     </div>

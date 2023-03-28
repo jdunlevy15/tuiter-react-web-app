@@ -1,5 +1,5 @@
 import NavigationSidebar from "../navigation-sidebar";
-import WhoToFollowList from "../who-to-follow-list";
+import PostSummaryList from "../post-summary-list";
 import TuitsList from "../tuits/TuitsList";
 import WhatsHappening from "./whats-happening";
 
@@ -23,7 +23,7 @@ function HomeComponent() {
           <TuitsList />
         </div>
         <div className="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-          <WhoToFollowList />
+          <PostSummaryList />
         </div>
       </div>
     </Provider>

@@ -11,31 +11,32 @@ import {
   faUser,
   faEllipsisH,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const NavigationSidebar = ({ active = "explore" }) => {
   return (
     <>
       <div className="list-group">
-        <a
-          href="../tuiter/home"
+        <Link
+          to="../tuiter/home"
           className={`list-group-item list-group-item-action ${
             active === "home" ? "active" : ""
           }`}
         >
           <FontAwesomeIcon icon={faHome} />
           <span className="wd-padding-left-4 d-none d-xl-inline">Home</span>
-        </a>
-        <a
-          href="../tuiter"
+        </Link>
+        <Link
+          to="../tuiter/explore"
           className={`list-group-item list-group-item-action ${
             active === "explore" ? "active" : ""
           }`}
         >
           <FontAwesomeIcon icon={faHashtag} />
           <span className="wd-padding-left-4 d-none d-xl-inline">Explore</span>
-        </a>
-        <a
-          href="../notifications/index.html"
+        </Link>
+        <Link
+          to="../notifications/index.html"
           className={`list-group-item list-group-item-action ${
             active === "notifications" ? "active" : ""
           }`}
@@ -44,18 +45,18 @@ const NavigationSidebar = ({ active = "explore" }) => {
           <span className="wd-padding-left-4 d-none d-xl-inline">
             Notifications
           </span>
-        </a>
-        <a
-          href="../messages/index.html"
+        </Link>
+        <Link
+          to="../messages/index.html"
           className={`list-group-item list-group-item-action ${
             active === "messages" ? "active" : ""
           }`}
         >
           <FontAwesomeIcon icon={faEnvelope} />
           <span className="wd-padding-left-4 d-none d-xl-inline">Messages</span>
-        </a>
-        <a
-          href="../bookmarks/index.html"
+        </Link>
+        <Link
+          to="../bookmarks/index.html"
           className={`list-group-item list-group-item-action ${
             active === "bookmarks" ? "active" : ""
           }`}
@@ -64,34 +65,34 @@ const NavigationSidebar = ({ active = "explore" }) => {
           <span className="wd-padding-left-4 d-none d-xl-inline">
             Bookmarks
           </span>
-        </a>
-        <a
-          href="../lists/index.html"
+        </Link>
+        <Link
+          to="../lists/index.html"
           className={`list-group-item list-group-item-action ${
             active === "lists" ? "active" : ""
           }`}
         >
           <FontAwesomeIcon icon={faList} />
           <span className="wd-padding-left-4 d-none d-xl-inline">Lists</span>
-        </a>
-        <a
-          href="../profile/index.html"
+        </Link>
+        <Link
+          to="../profile/index.html"
           className={`list-group-item list-group-item-action ${
             active === "profile" ? "active" : ""
           }`}
         >
           <FontAwesomeIcon icon={faUser} />
           <span className="wd-padding-left-4 d-none d-xl-inline">Profile</span>
-        </a>
-        <a
-          href="../more/index.html"
+        </Link>
+        <Link
+          to="../more/index.html"
           className={`list-group-item list-group-item-action ${
             active === "more" ? "active" : ""
           }`}
         >
           <FontAwesomeIcon icon={faEllipsisH} />
           <span className="wd-padding-left-4 d-none d-xl-inline">More</span>
-        </a>
+        </Link>
       </div>
     </>
   );

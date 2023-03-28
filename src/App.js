@@ -13,8 +13,9 @@ function App() {
         <Routes>
           <Route path="/*" element={<Labs />} />
           <Route path="/hello" element={<HelloWorld />} />
-          <Route path="/tuiter" element={<Tuiter />} />
+          <Route path="/tuiter" element={<HomeComponent />} />
           <Route path="/tuiter/home" element={<HomeComponent />} />
+          <Route path="/tuiter/explore" element={<Tuiter />} />
         </Routes>
       </div>
     </BrowserRouter>
