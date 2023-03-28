@@ -15,11 +15,11 @@ function TuitStats({
         {stats.replies}
       </span>
       <span>
-        <FontAwesomeIcon icon={faRetweet} className="icon-num" />
+        <FontAwesomeIcon icon={faRetweet} className={"icon-num"} />
         {stats.retuits}
       </span>
       <span>
-        <FontAwesomeIcon icon={farHeart} className="icon-num" />
+        {<FontAwesomeIcon icon={farHeart} className="icon-num" />}
         {stats.likes}
       </span>
       <span>

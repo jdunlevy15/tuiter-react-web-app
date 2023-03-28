@@ -14,7 +14,12 @@ const WhatsHappening = () => {
   return (
     <div className="row">
       <div className="col-auto">
-        <img src="/images/nasa.jpeg" width={60} className="rounded-circle" />
+        <img
+          src="/images/nasa.jpeg"
+          alt={"nasa"}
+          width={60}
+          className="rounded-circle"
+        />
       </div>
       <div className="col-10">
         <textarea
