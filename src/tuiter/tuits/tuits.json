@@ -1,0 +1,57 @@
+[
+  {
+    "topic": "Web Development",
+    "userName": "ReactJS",
+    "handle": "@reactjs",
+    "time": "2h",
+    "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc2Y2gmQB5zuaBd1AfN_AyEgoTgxPF65i7GwlvrbnnP_RUlubieG19WFnonCtS4ZfAox4&usqp=CAU",
+    "liked": "false",
+    "replies": "13",
+    "retuits": "6",
+    "likes": "35",
+    "tuit": "In React Labs posts, we write about projects in active research and development. Since our last update, we've made significant progress on our long-term projects, and we'd like to share what we've learned."
+  },
+  {
+    "topic": "",
+    "userName": "JavaScript",
+    "handle": "@JavaScript",
+    "time": "1 day",
+    "title": "JavaScript is programming language that can run on browsers as well as desktops",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+    "tweets": "123K",
+    "liked": "true",
+    "replies": "490",
+    "retuits": "200",
+    "likes": "674",
+    "tuit": "Just curious, are you using => functions exclusively or still sticking to traditional function syntax? No judgement!"
+  },
+  {
+    "topic": "Web Development",
+    "userName": "jQuery",
+    "title": "",
+    "handle": "@jquery",
+    "time": "last week",
+    "image": "https://www.interviewbit.com/blog/wp-content/uploads/2021/10/jquery-logo-vertical_large_square.png",
+    "tweets": "122K",
+    "liked": "false",
+    "replies": "5",
+    "retuits": "20",
+    "likes": "45",
+    "tuit": "jQuery is a JavaScript framework designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax."
+  },
+  {
+    "topic": "Web Development",
+    "userName": "NodeJS",
+    "handle": "@node.js",
+    "title": "",
+    "time": "last month",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAl760B1LCCm8M4IfYmSdDKeA73KvMgFT4ievlterVYahVRt3N6ebX9xHdbe2Lbnncg0Q&usqp=CAU",
+    "tweets": "120K",
+    "liked": "true",
+    "replies": "32",
+    "retuits": "67",
+    "likes": "102",
+    "tuit": "Node.js is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more. Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript Engine, and executes JavaScript code outside a web browser."
+  }
+]

@@ -233,3 +233,18 @@ p#id-selector-2 {
   width: 20%;
   float: left;
 }
+
+#qwe {
+  background-color: red;
+}
+#wer {
+  background-color: blue;
+}
+.qwe {
+  background-color: red;
+  color: white;
+}
+.wer {
+  background-color: blue;
+  color: white;
+}
