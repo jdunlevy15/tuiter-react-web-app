@@ -21,13 +21,6 @@ export default function TuitItem({
     tuit: "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft",
   },
 }) {
-  const tuitStats = {
-    liked: tuit.liked,
-    replies: tuit.replies,
-    retuits: tuit.retuits,
-    likes: tuit.likes,
-  };
-
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
     dispatch(deleteTuit(id));
@@ -60,7 +53,7 @@ export default function TuitItem({
         </div>
       </div>
       <div className="row">
-        <TuitStats stats={tuitStats} />
+        <TuitStats tuit={tuit} />
       </div>
     </div>
   );

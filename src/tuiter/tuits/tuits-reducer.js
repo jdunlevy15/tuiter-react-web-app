@@ -32,8 +32,23 @@ const tuitsSlice = createSlice({
       const index = state.findIndex((tuit) => tuit._id === action.payload);
       state.splice(index, 1);
     },
+    likeTuit(state, action) {
+      const tuit = state.find((t) => t._id === action.payload);
+      console.log(`TUIT LIKED === 'false'?: ${tuit.liked === "false"}`);
+      if (tuit.liked === "false") {
+        tuit.liked = false;
+      } else if (tuit.liked === "true") {
+        tuit.liked = true;
+      }
+      console.log(`TUIT LIKED: ${tuit.liked ? "yessir" : "no"}`);
+      tuit.likes = parseInt(tuit.likes);
+      tuit.liked = !tuit.liked;
+      tuit.liked
+        ? (tuit.likes = tuit.likes + 1)
+        : (tuit.likes = tuit.likes - 1);
+    },
   },
 });
 
-export const { createTuit, deleteTuit } = tuitsSlice.actions;
+export const { createTuit, deleteTuit, likeTuit } = tuitsSlice.actions;
 export default tuitsSlice.reducer;

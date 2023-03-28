@@ -6,3 +6,11 @@
 .icon-num {
   padding-right: 4px;
 }
+
+.liked-tuit {
+  color: #e31254;
+}
+
+.unliked-tuit {
+  color: black;
+}
