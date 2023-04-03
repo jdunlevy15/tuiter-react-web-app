@@ -9,7 +9,7 @@ import whoReducer from "./tuiter/reducers/who-reducer";
 import tuitsReducer from "./tuiter/tuits/tuits-reducer";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 const store = configureStore({
   reducer: { who: whoReducer, tuitsData: tuitsReducer },

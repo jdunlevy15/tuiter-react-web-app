@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRetweet, faShareAlt } from "@fortawesome/free-solid-svg-icons";
 import { faHeart as farHeart } from "@fortawesome/free-regular-svg-icons";
@@ -51,8 +51,6 @@ function TuitStats({
       );
     }
   };
-
-  useEffect(() => {}, [tuitDislikeHandler, tuitLikeHandler]);
 
   return (
     <div className={"tuit-stats"}>

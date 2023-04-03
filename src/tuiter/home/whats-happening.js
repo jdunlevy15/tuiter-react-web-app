@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { createTuitThunk } from "../../services/tuits-thunks";
 
@@ -12,7 +12,6 @@ const WhatsHappening = () => {
     dispatch(createTuitThunk(newTuit));
   };
 
-  useEffect(() => {}, [tuitClickHandler]);
   return (
     <div className="row">
       <div className="col-auto">

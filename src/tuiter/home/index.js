@@ -1,13 +1,8 @@
 import NavigationSidebar from "../navigation-sidebar";
 import TuitsList from "../tuits/TuitsList";
 import WhatsHappening from "./whats-happening";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import WhoToFollowList from "../who-to-follow-list";
-
-import whoReducer from "../reducers/who-reducer";
-import tuitsReducer from "../tuits/tuits-reducer";
-import { configureStore } from "@reduxjs/toolkit";
-import { Provider } from "react-redux";
 
 function HomeComponent() {
   useEffect(() => {
