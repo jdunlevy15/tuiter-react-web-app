@@ -2,11 +2,6 @@ import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
 import ExploreComponent from "./explore";
 
-import whoReducer from "./reducers/who-reducer";
-import tuitsReducer from "./tuits/tuits-reducer";
-import { configureStore } from "@reduxjs/toolkit";
-import { Provider } from "react-redux";
-
 function Tuiter() {
   return (
     <div className="row mt-2">
