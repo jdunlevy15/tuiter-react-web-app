@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import TuitStats from "./TuitStats";
@@ -26,7 +26,6 @@ export default function TuitItem({
     dispatch(deleteTuitThunk(id));
   };
 
-  useEffect(() => {}, [deleteTuitHandler]);
   return (
     <div className="list-group-item">
       <div className="row">
