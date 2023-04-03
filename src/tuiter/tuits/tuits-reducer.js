@@ -1,53 +1,43 @@
 import { createSlice } from "@reduxjs/toolkit";
-import tuits from "./tuits.json";
+// import tuits from "./tuits.json";
+import {
+  findTuitsThunk,
+  deleteTuitThunk,
+  createTuitThunk,
+} from "../../services/tuits-thunks";
 
-const currentUser = {
-  userName: "NASA",
-  handle: "@nasa",
-  image: "/images/nasa.jpeg",
-};
-
-const templateTuit = {
-  ...currentUser,
-  topic: "Space",
-  time: "2h",
-  liked: false,
-  replies: 0,
-  retuits: 0,
-  likes: 0,
+const initialState = {
+  tuits: [],
+  loading: false,
 };
 
 const tuitsSlice = createSlice({
   name: "tuits",
-  initialState: tuits,
-  reducers: {
-    createTuit(state, action) {
-      state.unshift({
-        ...action.payload,
-        ...templateTuit,
-        _id: new Date().getTime(),
-      });
+  initialState,
+  extraReducers: {
+    [findTuitsThunk.pending]: (state) => {
+      state.loading = true;
+      state.tuits = [];
     },
-    deleteTuit(state, action) {
-      const index = state.findIndex((tuit) => tuit._id === action.payload);
-      state.splice(index, 1);
+    [findTuitsThunk.fulfilled]: (state, { payload }) => {
+      state.loading = false;
+      state.tuits = payload;
     },
-    likeTuit(state, action) {
-      const tuit = state.find((t) => t._id === action.payload);
-      console.log(`TUIT LIKED === 'false'?: ${tuit.liked === "false"}`);
-      if (tuit.liked === "false") {
-        tuit.liked = false;
-      } else if (tuit.liked === "true") {
-        tuit.liked = true;
-      }
-      console.log(`TUIT LIKED: ${tuit.liked ? "yessir" : "no"}`);
-      tuit.likes = parseInt(tuit.likes);
-      tuit.liked = !tuit.liked;
-      tuit.liked
-        ? (tuit.likes = tuit.likes + 1)
-        : (tuit.likes = tuit.likes - 1);
+    [findTuitsThunk.rejected]: (state, action) => {
+      state.loading = false;
+      state.error = action.error;
+    },
+    [deleteTuitThunk.fulfilled]: (state, { payload }) => {
+      state.loading = false;
+      state.tuits = state.tuits.filter((t) => t._id !== payload);
+    },
+    [createTuitThunk.fulfilled]: (state, { payload }) => {
+      state.loading = false;
+      state.tuits.push(payload);
     },
   },
+
+  reducers: {},
 });
 
 export const { createTuit, deleteTuit, likeTuit } = tuitsSlice.actions;

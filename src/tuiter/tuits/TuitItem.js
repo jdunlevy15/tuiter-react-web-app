@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import TuitStats from "./TuitStats";
-import { deleteTuit } from "../tuits/tuits-reducer";
 import { useDispatch } from "react-redux";
+import { deleteTuitThunk } from "../../services/tuits-thunks";
 
 export default function TuitItem({
   tuit = {
@@ -23,8 +23,10 @@ export default function TuitItem({
 }) {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   };
+
+  useEffect(() => {}, [deleteTuitHandler]);
   return (
     <div className="list-group-item">
       <div className="row">
